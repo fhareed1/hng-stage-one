@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HNG</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="test">
+        <!-- Slack Name -->
+        <div data-testid="slackUserName">
+          <h1 class="header-name">Folorunsho Fareed</h1>
+        </div>
+        <!-- Slack Display Picture -->
+        <div data-testid="slackDisplayImage" class="image">
+          <img src="./assets/img/me.jpg" alt="fhareed" />
+        </div>
+        <!-- Current Day of the Week -->
+        <div
+          class="day_of_week"
+          id="day"
+          data-testid="currentDayOfTheWeek"
+        ></div>
+        <!-- Current UTC Time -->
+        <div
+          data-testid="currentUTCTime"
+          id="utcTime"
+          class="utc_time"
+        ></div>
+        <!-- Track -->
+        <div data-testid="myTrack" class="track">
+          <h3>Track: </h3>
+          <p> Frontend</p>
+        </div>
+        <!-- Github Url -->
+        <div data-testid="githubURL" class="githubURL">
+          <h3>Github Link:</h3>
+          <span
+            ><a href="https://github.com/fhareed1/hng-stage-one.git"
+              >Github Link</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

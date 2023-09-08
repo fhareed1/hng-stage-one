@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); 
+  box-shadow: black;
+  
+}
+
+.test {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  border-radius: 5px; 
+  width: 500px;
+  padding: 50px 0;
+  box-shadow: 20px 20px 50px 15px grey;
+}
+
+.image {
+  height: 100%;
+  width: 25%;
+  padding: 20px 0;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+}
+
+.header-name{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.day_of_week{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+
+.utc_time{
+  color: green;
+  padding: 10px 0;
+}
+
+.track{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  
+}
+.track h3{
+  padding-right: 4px;
+}
+
+.githubURL{
+  display: flex;
+  align-items: center;
+}
+
+.githubURL h3{
+  padding-right: 6px;
+}
