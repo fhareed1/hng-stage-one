@@ -1,4 +1,4 @@
-const date = new Date();
+const dayOfWeekElement = document.getElementById('dayOfWeek');
 
 const daysOfWeek = [
   'Sunday',
@@ -10,28 +10,25 @@ const daysOfWeek = [
   'Saturday',
 ];
 
-let day = daysOfWeek[date.getDay()];
-
-const div = document.getElementById('day');
-const p = document.createElement('h3');
-
-p.textContent = "Today's date is " + day + '';
-
-div.appendChild(p);
-
-// Create a new Date object
 const currentDate = new Date();
+console.log(currentDate);
 
-// Get UTC components (hours, minutes, seconds)
-const ms = currentDate.getUTCMilliseconds();
+const currentDayIndex = currentDate.getDay();
 
-// Format the time as a string
-// const currentTimeUTC = `The UTC Time is ${hours}:${minutes}:${seconds}`;
+dayOfWeekElement.textContent = daysOfWeek[currentDayIndex];
 
-// Display the UTC time
-const para = document.getElementById('utcTime');
-const span = document.createElement('h3');
+function updateUTCTimeShortMilliseconds() {
+  const currentUTCDate = new Date();
 
-span.textContent = `The UTC Time in milliseconds: ${ms}`;
+  const currentTimeUTCInMilliseconds = currentUTCDate.getTime();
 
-div.appendChild(span);
+  const millisecondsRounded = Math.floor(currentTimeUTCInMilliseconds / 10);
+
+  let utcTime = document.querySelector('#utcTimeShortMilliseconds');
+
+  utcTime.textContent = millisecondsRounded;
+}
+
+updateUTCTimeShortMilliseconds();
+
+setInterval(updateUTCTimeShortMilliseconds, 1000);

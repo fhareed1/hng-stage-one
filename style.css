@@ -2,82 +2,65 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
 }
-
-.body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.1
-  ); 
-  box-shadow: black;
-  
+body,
+html {
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--bg-1);
+  color: var(--text-color);
 }
-
-.test {
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: grey;
-  border-radius: 5px; 
-  width: 500px;
-  padding: 50px 0;
-  box-shadow: 20px 20px 50px 15px grey;
+:root {
+  --bg-1: hsl(0, 2%, 20%);
+  --text-color: hsl(0, 0%, 100%);
 }
-
-.image {
-  height: 100%;
-  width: 25%;
-  padding: 20px 0;
+h1 {
+  font-size: 3rem;
 }
-
-.image img {
-  height: 100%;
-  width: 100%;
+p {
+  font-size: 1.5rem;
 }
-
-.header-name{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  overflow: hidden;
 }
-
-.day_of_week{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-bottom: 3px;
+.beg,
+.time {
   text-align: center;
+  line-height: 2;
 }
-
-
-.utc_time{
-  color: green;
-  padding: 10px 0;
-}
-
-.track{
+.img-container {
   display: flex;
-  align-items: center; 
   justify-content: center;
-  
-}
-.track h3{
-  padding-right: 4px;
+  align-items: center;
+  margin-top: 1rem;
 }
 
-.githubURL{
+.width-10 {
+  max-width: 10rem;
+  object-fit: cover;
+  border-radius: 40%;
+}
+.curDay,
+.uniTime {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding-top: 0.5rem;
+}
+.github-btn {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-
-.githubURL h3{
-  padding-right: 6px;
+.github-btn button {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  font-weight: bold;
 }

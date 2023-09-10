@@ -3,48 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stage 1</title>
     <link rel="stylesheet" href="style.css" />
-    <title>HNG</title>
   </head>
   <body>
-    <div class="body">
-      <div class="test">
-        <!-- Slack Name -->
-        <div data-testid="slackUserName">
-          <h1 class="header-name">Folorunsho Fareed</h1>
+    <section>
+      <div class="container">
+        <div class="beg">
+          <h1 data-testid="slackUserName">Fareed</h1>
+          <p data-testid="myTrack">Frontend</p>
         </div>
-        <!-- Slack Display Picture -->
-        <div data-testid="slackDisplayImage" class="image">
-          <img src="./assets/img/me.jpg" alt="fhareed" />
+
+        <div class="img-container">
+          <img
+            class="width-10"
+            src="./assets//img/me.jpg"
+            alt="folorunsho fareed"
+            data-testid="slackDisplayImage"
+          />
         </div>
-        <!-- Current Day of the Week -->
-        <div
-          class="day_of_week"
-          id="day"
-          data-testid="currentDayOfTheWeek"
-        ></div>
-        <!-- Current UTC Time -->
-        <div
-          data-testid="currentUTCTime"
-          id="utcTime"
-          class="utc_time"
-        ></div>
-        <!-- Track -->
-        <div data-testid="myTrack" class="track">
-          <h3>Track: </h3>
-          <p> Frontend</p>
+
+        <div class="time">
+          <div class="curDay">
+            <h3 id="dayOfWeek" data-testid="currentDayOfTheWeek"></h3>
+          </div>
+
+          <div class="uniTime">
+            <p id="utcTimeShortMilliseconds" data-testid="currentUCTTime"></p>
+          </div>
         </div>
-        <!-- Github Url -->
-        <div data-testid="githubURL" class="githubURL">
-          <h3>Github Link:</h3>
-          <span
-            ><a href="https://github.com/fhareed1/hng-stage-one.git"
-              >Github Link</a
-            ></span
+
+        <div class="github-btn">
+          <button
+            onclick="window.location.href = 'https://github.com/fhareed1/hng-stage-one.git' "
+            data-testid="githubURL"
           >
+            GitHub
+          </button>
         </div>
       </div>
-    </div>
+    </section>
+
+    <script src="app.js"></script>
   </body>
-  <script src="app.js"></script>
 </html>
